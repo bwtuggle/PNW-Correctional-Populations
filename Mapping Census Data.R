@@ -27,8 +27,8 @@
 # from the Census Bureau at https://api.census.gov/data/key_signup.html
   # census_api_key("your key here",overwrite = TRUE,install = TRUE)
   readRenviron("~/.Renviron")
-  acs5 <- load_variables(2020,"pl")
-  View(acs5)
+  decdata <- load_variables(2020,"pl")
+  View(decdata)
   
   corrpop2020 <- get_decennial(geography="county",year=2020,sumfile = "pl",
                      variables = c(totalpop="H1_001N",
